@@ -2,298 +2,223 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="favicon.png">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Vitek3DPrint | 3D tisk na zakázku</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Profesionální 3D tisk na zakázku. Tisk prototypů, technických dílů, modelů a výrobků na míru.">
-
-<meta name="keywords" content="3D tisk, 3D tisk na zakázku, technické díly, prototypy, Vitek3DPrint">
-
+<title>Vitek3DPrint | 3D tisk na zakázku</title>
+<meta name="description" content="Profesionální 3D tisk na zakázku. Tisk prototypů, technických dílů, modelů, náhradních dílů a výrobků na míru.">
+<meta name="keywords" content="3D tisk, 3D tisk na zakázku, zakázkový 3D tisk, technické díly, prototypy, náhradní díly, Vitek3DPrint">
 <meta name="author" content="Vitek3DPrint">
-<title>Vitek3DPrint | Zakázkový 3D tisk na míru</title>
-<meta name="description" content="Zakázkový 3D tisk na míru. Prototypy, náhradní díly, technické součástky a originální výrobky. Kontakt: info@vitek3dprint.cz.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Vitek3DPrint | 3D tisk na zakázku">
+<meta property="og:description" content="Zakázkový 3D tisk na míru. Prototypy, technické díly, náhradní díly a výrobky podle zadání.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.vitek3dprint.cz">
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#08090b;color:white}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#08090b;color:#fff}
 a{text-decoration:none;color:inherit}
-.nav{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.92);backdrop-filter:blur(14px);border-bottom:1px solid #27272a}
+.nav{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.94);backdrop-filter:blur(14px);border-bottom:1px solid #27272a}
 .navin{max-width:1180px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:900}
 .brand span{color:#f97316}
 .menu{display:flex;gap:22px;color:#d4d4d8;font-size:14px;font-weight:800}
 .menu a:hover{color:#f97316}
 .navbtn{background:#f97316;color:#111;padding:12px 18px;border-radius:14px;font-weight:900}
-
-.logo{width:54px;height:54px;position:relative}
-.m{position:absolute;top:5px;width:42px;height:25px;background:#f97316;clip-path:polygon(0 0,22% 0,50% 42%,78% 0,100% 0,100% 100%,78% 100%,78% 38%,50% 82%,22% 38%,22% 100%,0 100%)}
+.logo{width:54px;height:54px;position:relative;flex:0 0 auto}
+.m{position:absolute;top:5px;width:42px;height:25px;background:#f97316;clip-path:polygon(0 0,32% 0,50% 38%,68% 0,100% 0,100% 100%,76% 100%,76% 42%,50% 82%,24% 42%,24% 100%,0 100%)}
 .v{position:absolute;bottom:3px;width:42px;height:30px;background:#1f2933;clip-path:polygon(0 0,24% 0,50% 64%,76% 0,100% 0,50% 100%)}
-.td{position:absolute;bottom:9px;left:15px;font-size:11px;font-weight:900;color:white}
-
+.td{position:absolute;bottom:8px;left:12px;font-size:13px;font-weight:900;color:white;text-shadow:0 2px 4px #000}
 .hero{position:relative;overflow:hidden;border-bottom:1px solid #27272a;background:#09090b}
-.glow{position:absolute;inset:0;background:linear-gradient(135deg,rgba(249,115,22,.15),transparent 45%,rgba(6,182,212,.08))}
+.glow{position:absolute;inset:0;background:linear-gradient(135deg,rgba(249,115,22,.16),transparent 44%,rgba(6,182,212,.08))}
 .wrap{position:relative;max-width:1180px;margin:auto;padding:88px 24px;display:grid;grid-template-columns:1fr .9fr;gap:64px;align-items:center}
-
 .badge{display:inline-flex;border:1px solid rgba(249,115,22,.35);background:rgba(249,115,22,.1);color:#fdba74;border-radius:999px;padding:7px 14px;font-size:14px;margin-bottom:24px}
 h1{font-size:clamp(46px,8vw,84px);line-height:.95;margin:0;font-weight:900;letter-spacing:-2px}
 .lead{margin-top:28px;font-size:clamp(20px,3vw,27px);line-height:1.45;color:#d4d4d8}
-
 .btns{display:flex;gap:16px;flex-wrap:wrap;margin-top:42px}
 .btn{padding:17px 28px;border-radius:18px;font-size:18px;font-weight:800;display:inline-block;border:none;cursor:pointer}
 .primary{background:#f97316;color:#111}
 .secondary{border:1px solid #3f3f46;background:rgba(24,24,27,.65);color:white}
-
 .chips{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
 .chip{border:1px solid #27272a;background:rgba(24,24,27,.7);border-radius:18px;padding:18px;text-align:center;color:#d4d4d8}
-
 .photo{border:1px solid rgba(249,115,22,.22);background:rgba(24,24,27,.68);border-radius:34px;padding:24px}
 .mainphoto{aspect-ratio:4/5;border-radius:26px;border:2px dashed rgba(249,115,22,.45);background:#09090b;display:flex;align-items:center;justify-content:center;text-align:center;padding:36px}
 .pt{font-size:28px;font-weight:900;color:#fb923c}
 .pv{color:#a1a1aa;line-height:1.55}
 .small{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
 .sphoto{aspect-ratio:16/10;border-radius:20px;border:2px dashed #3f3f46;background:#09090b;display:flex;align-items:center;justify-content:center;color:#71717a;font-weight:900}
-
 section{padding:88px 24px}
 .cont{max-width:1180px;margin:auto}
 h2{font-size:42px;margin:0 0 18px;font-weight:900}
 .muted{color:#a1a1aa;font-size:18px;line-height:1.6;max-width:760px}
-
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
 .card,.step,.info{border:1px solid #27272a;background:rgba(24,24,27,.58);border-radius:28px;padding:32px}
 .card h3{font-size:24px;margin:0 0 14px}
-.card p{color:#a1a1aa;line-height:1.55}
-
+.card p,.step p{color:#a1a1aa;line-height:1.55}
 .process{border-top:1px solid #27272a;border-bottom:1px solid #27272a;background:rgba(24,24,27,.35)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
 .num{font-size:50px;font-weight:900;color:#fb923c;margin-bottom:20px}
 .trial{margin-top:28px;border:1px solid rgba(249,115,22,.45);background:rgba(249,115,22,.08);border-radius:20px;padding:20px;color:#fed7aa;font-weight:700}
-
 .orderwrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;margin-top:42px}
 .info ul{color:#d4d4d8;line-height:1.8}
-
+.contact-line{display:flex;flex-direction:column;gap:10px;margin-top:20px;color:#d4d4d8}
+.contact-line a{color:#fb923c;font-weight:900}
 form{border:1px solid rgba(249,115,22,.25);background:linear-gradient(135deg,rgba(249,115,22,.10),rgba(24,24,27,.88));border-radius:32px;padding:32px}
 label{display:block;margin:18px 0 8px;font-weight:800}
 input,textarea,select{width:100%;padding:15px 16px;border-radius:14px;border:1px solid #3f3f46;background:#08090b;color:white;font-size:16px}
 textarea{min-height:150px}
 .hint{font-size:13px;color:#a1a1aa;margin-top:8px}
-
+.contactbox{border:1px solid rgba(249,115,22,.25);border-radius:34px;background:linear-gradient(135deg,rgba(249,115,22,.10),rgba(24,24,27,.88));padding:42px;margin-top:38px}
 footer{border-top:1px solid #27272a;padding:38px 24px;text-align:center;color:#71717a;font-size:14px}
-
-@media(max-width:950px){
-.menu{display:none}
-.wrap,.orderwrap{grid-template-columns:1fr}
-.chips,.grid,.steps{grid-template-columns:1fr}
-section{padding:64px 20px}
-}
+@media(max-width:950px){.menu{display:none}.wrap,.orderwrap{grid-template-columns:1fr}.chips,.grid,.steps{grid-template-columns:1fr}section{padding:64px 20px}}
 </style>
 </head>
+
 <body>
-
 <nav class="nav">
-<div class="navin">
-<a class="brand" href="#uvod">
-<div class="logo">
-<div class="m"></div>
-<div class="v"></div>
-<div class="td">3D</div>
-</div>
-<div>Vitek<span>3D</span>Print</div>
-</a>
-
-<div class="menu">
-<a href="#uvod">Úvod</a>
-<a href="#sluzby">Služby</a>
-<a href="#postup">Jak to funguje</a>
-<a href="#objednavka">Objednávka</a>
-<a href="#kontakt">Kontakt</a>
-</div>
-
-<a class="navbtn" href="#objednavka">Poptávka</a>
-</div>
+  <div class="navin">
+    <a class="brand" href="#uvod">
+      <div class="logo"><div class="m"></div><div class="v"></div><div class="td">3D</div></div>
+      <div>Vitek<span>3D</span>Print</div>
+    </a>
+    <div class="menu">
+      <a href="#uvod">Úvod</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#postup">Jak to funguje</a>
+      <a href="#objednavka">Objednávka</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <a class="navbtn" href="#objednavka">Poptávka</a>
+  </div>
 </nav>
 
 <section class="hero" id="uvod">
-<div class="glow"></div>
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <div class="badge">Zakázková výroba • 3D tisk na míru</div>
+      <h1>Vitek3DPrint</h1>
+      <p class="lead">Specializuji se na zakázkový 3D tisk na míru a postupně buduji moderní značku zaměřenou na kvalitu, přesnost a individuální přístup.</p>
+      <div class="btns">
+        <a class="btn primary" href="#objednavka">Nezávazná poptávka</a>
+        <a class="btn secondary" href="#sluzby">Ukázky výrobků</a>
+      </div>
+      <div class="chips">
+        <div class="chip">Rychlá výroba</div>
+        <div class="chip">Zakázkové řešení</div>
+        <div class="chip">Odeslání po celé ČR</div>
+        <div class="chip">3D tisk na míru</div>
+      </div>
+    </div>
 
-<div class="wrap">
-<div>
-<div class="badge">Zakázková výroba • 3D tisk na míru</div>
-
-<h1>Vitek3DPrint</h1>
-
-<p class="lead">
-Specializuji se na zakázkový 3D tisk na míru a postupně buduji moderní značku zaměřenou na kvalitu, přesnost a individuální přístup.
-</p>
-
-<div class="btns">
-<a class="btn primary" href="#objednavka">Nezávazná poptávka</a>
-<a class="btn secondary" href="#sluzby">Ukázky výrobků</a>
-</div>
-
-<div class="chips">
-<div class="chip">Rychlá výroba</div>
-<div class="chip">Zakázkové řešení</div>
-<div class="chip">Odeslání po celé ČR</div>
-<div class="chip">3D tisk na míru</div>
-</div>
-</div>
-
-<div class="photo">
-<div class="mainphoto">
-<div>
-<div class="pt">FOTO #1</div>
-<p class="pv">
-Sem později vložíme hlavní fotku 3D tiskárny nebo hotového výrobku.
-</p>
-</div>
-</div>
-
-<div class="small">
-<div class="sphoto">FOTO #2</div>
-<div class="sphoto">FOTO #3</div>
-</div>
-</div>
-</div>
+    <div class="photo">
+      <div class="mainphoto"><div><div class="pt">FOTO #1</div><p class="pv">Sem později vložíme hlavní fotku 3D tiskárny nebo hotového výrobku.</p></div></div>
+      <div class="small"><div class="sphoto">FOTO #2</div><div class="sphoto">FOTO #3</div></div>
+    </div>
+  </div>
 </section>
 
 <section id="sluzby">
-<div class="cont">
-<h2>Co nabízím</h2>
-
-<p class="muted">
-Zakázkový 3D tisk a výroba podle potřeb zákazníka. Pomáhám jednotlivcům i firmám rychle vyrobit funkční a kvalitní produkty.
-</p>
-
-<div class="grid">
-<div class="card"><h3>Náhradní díly</h3><p>Výroba těžko dostupných nebo poškozených součástek.</p></div>
-<div class="card"><h3>Prototypy</h3><p>Rychlá výroba prototypů pro testování a vývoj.</p></div>
-<div class="card"><h3>Technické součástky</h3><p>Funkční díly pro domácnost, dílnu i průmysl.</p></div>
-<div class="card"><h3>Dekorace a design</h3><p>Originální výrobky a personalizované produkty.</p></div>
-<div class="card"><h3>Zakázková výroba</h3><p>Výroba podle STL modelu, fotky nebo vašeho návrhu.</p></div>
-<div class="card"><h3>Malosériová výroba</h3><p>Možnost výroby menších sérií pro firmy i projekty.</p></div>
-</div>
-</div>
+  <div class="cont">
+    <h2>Co nabízím</h2>
+    <p class="muted">Zakázkový 3D tisk a výroba podle potřeb zákazníka. Pomáhám jednotlivcům i firmám rychle vyrobit funkční a kvalitní produkty.</p>
+    <div class="grid">
+      <div class="card"><h3>Náhradní díly</h3><p>Výroba těžko dostupných nebo poškozených součástek.</p></div>
+      <div class="card"><h3>Prototypy</h3><p>Rychlá výroba prototypů pro testování a vývoj.</p></div>
+      <div class="card"><h3>Technické součástky</h3><p>Funkční díly pro domácnost, dílnu i průmysl.</p></div>
+      <div class="card"><h3>Dekorace a design</h3><p>Originální výrobky a personalizované produkty.</p></div>
+      <div class="card"><h3>Zakázková výroba</h3><p>Výroba podle STL modelu, fotky nebo vašeho návrhu.</p></div>
+      <div class="card"><h3>Malosériová výroba</h3><p>Možnost výroby menších sérií pro firmy i projekty.</p></div>
+    </div>
+  </div>
 </section>
 
 <section class="process" id="postup">
-<div class="cont">
-<h2>Jak to funguje</h2>
-
-<p class="muted">
-Jednoduchý proces od poptávky až po hotový výrobek.
-</p>
-
-<div class="steps">
-<div class="step"><div class="num">01</div><h3>Pošlete poptávku</h3></div>
-<div class="step"><div class="num">02</div><h3>Domluvíme řešení</h3></div>
-<div class="step"><div class="num">03</div><h3>Vyrobíme produkt</h3></div>
-<div class="step"><div class="num">04</div><h3>Odešleme hotový výrobek</h3></div>
-</div>
-
-<div class="trial">
-Pokud to bude potřeba, zdarma zašleme zkušební model před finální výrobou.
-</div>
-</div>
+  <div class="cont">
+    <h2>Jak to funguje</h2>
+    <p class="muted">Jednoduchý proces od poptávky až po hotový výrobek.</p>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Pošlete poptávku</h3><p>Napíšete, co potřebujete vyrobit.</p></div>
+      <div class="step"><div class="num">02</div><h3>Domluvíme řešení</h3><p>Probereme rozměry, materiál a cenu.</p></div>
+      <div class="step"><div class="num">03</div><h3>Vyrobíme produkt</h3><p>Zakázku vytiskneme a připravíme.</p></div>
+      <div class="step"><div class="num">04</div><h3>Odešleme výrobek</h3><p>Hotový výrobek předáme nebo odešleme.</p></div>
+    </div>
+    <div class="trial">Pokud to bude potřeba, zdarma zašleme zkušební model před finální výrobou.</div>
+  </div>
 </section>
 
 <section id="objednavka">
-<div class="cont">
-<h2>Vytvoření poptávky</h2>
+  <div class="cont">
+    <h2>Vytvoření poptávky</h2>
+    <p class="muted">Vyplňte formulář, napište co potřebujete vyrobit a případně přiložte soubor nebo obrázek.</p>
 
-<p class="muted">
-Vyplňte formulář, napište co potřebujete vyrobit a případně přiložte soubor nebo obrázek.
-</p>
+    <div class="orderwrap">
+      <div class="info">
+        <h3>Co můžete poslat?</h3>
+        <ul>
+          <li>STL / 3MF / OBJ soubor</li>
+          <li>fotku rozbitého dílu</li>
+          <li>náčrt nebo rozměry</li>
+          <li>popis nápadu nebo zakázky</li>
+        </ul>
+        <p style="margin-top:22px;color:#d4d4d8;line-height:1.6">E-mail pro zakázky:<br><a href="mailto:info@vitek3dprint.cz" style="color:#fb923c;font-weight:900">info@vitek3dprint.cz</a></p>
+        <p style="color:#d4d4d8;line-height:1.8">Miroslav Vítek – Vitek3DPrint<br>IČO: 23155957<br>Kojčice 15, 394 09</p>
+      </div>
 
-<div class="orderwrap">
+      <form action="mailto:info@vitek3dprint.cz" method="post" enctype="text/plain">
+        <label>Jméno</label>
+        <input name="Jméno" type="text" placeholder="Vaše jméno">
 
-<div class="info">
-<h3>Co můžete poslat?</h3>
+        <label>E-mail</label>
+        <input name="E-mail" type="email" placeholder="vas@email.cz" required>
 
-<ul>
-<li>STL / 3MF / OBJ soubor</li>
-<li>fotku rozbitého dílu</li>
-<li>náčrt nebo rozměry</li>
-<li>popis nápadu nebo zakázky</li>
-</ul>
-<p style="margin-top:22px;color:#d4d4d8;line-height:1.6">E-mail pro zakázky:<br><a href="mailto:info@vitek3dprint.cz" style="color:#fb923c;font-weight:900">info@vitek3dprint.cz</a></p>
-<p style="color:#d4d4d8;line-height:1.8">
-Miroslav Vítek – Vitek3DPrint<br>
-IČO: 23155957<br>
-Kojčice 15, 394 09
-</p>
-</div>
+        <label>Typ zakázky</label>
+        <select name="Typ zakázky">
+          <option>Náhradní díl</option>
+          <option>Prototyp</option>
+          <option>Technická součástka</option>
+          <option>Dekorace / design</option>
+          <option>Zakázka pro firmu</option>
+          <option>Jiné</option>
+        </select>
 
-<form action="https://formsubmit.co/info@vitek3dprint.cz" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="_subject" value="Nová poptávka z webu Vitek3DPrint">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="false">
+        <label>Popis zakázky</label>
+        <textarea name="Popis zakázky" placeholder="Napište co chcete vytisknout, rozměry, materiál nebo další požadavky."></textarea>
 
-<label>Jméno</label>
-<input name="Jméno" type="text" placeholder="Vaše jméno">
+        <label>Soubor nebo obrázek</label>
+        <input name="Příloha" type="file" accept=".stl,.3mf,.obj,.step,.stp,.jpg,.jpeg,.png,.pdf">
+        <div class="hint">Po odeslání se otevře e-mail. Soubor přiložte ručně do otevřené zprávy.</div>
 
-<label>E-mail</label>
-<input name="E-mail" type="email" placeholder="vas@email.cz" required>
-
-<label>Typ zakázky</label>
-<select name="Typ zakázky">
-<option>Náhradní díl</option>
-<option>Prototyp</option>
-<option>Technická součástka</option>
-<option>Dekorace / design</option>
-<option>Zakázka pro firmu</option>
-<option>Jiné</option>
-</select>
-
-<label>Popis zakázky</label>
-<textarea name="Popis zakázky" placeholder="Napište co chcete vytisknout, rozměry, materiál nebo další požadavky."></textarea>
-
-<label>Soubor nebo obrázek</label>
-<input name="Příloha" type="file" accept=".stl,.3mf,.obj,.step,.stp,.jpg,.jpeg,.png,.pdf">
-
-<div class="hint">
-Soubor nebo obrázek se odešle společně s poptávkou.
-</div>
-
-<button class="btn primary" type="submit" style="margin-top:24px;width:100%">
-Odeslat nezávaznou poptávku
-</button>
-
-</form>
-</div>
-</div>
+        <button class="btn primary" type="submit" style="margin-top:24px;width:100%">Odeslat nezávaznou poptávku</button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <section id="kontakt">
-<div class="cont">
-<h2>Kontakt</h2>
+  <div class="cont">
+    <h2>Kontakt</h2>
+    <p class="muted">Pošli poptávku a společně najdeme nejlepší řešení pro tvůj projekt.</p>
 
-<p class="muted">
-Pošli poptávku a společně najdeme nejlepší řešení pro tvůj projekt.
-</p>
-
-<div class="card" style="margin-top:36px;max-width:760px">
-<h3>Vitek3DPrint</h3>
-<p>Zakázkový 3D tisk na míru</p>
-<p style="margin-top:18px;color:#d4d4d8">
-E-mail:<br>
-<a href="mailto:info@vitek3dprint.cz" style="color:#fb923c;font-weight:900;font-size:20px">info@vitek3dprint.cz</a>
-</p>
-<p style="color:#d4d4d8;line-height:1.8">
-Miroslav Vítek – Vitek3DPrint<br>
-IČO: 23155957<br>
-Kojčice 15, 394 09
-</p>
-<div class="btns">
-<a class="btn primary" href="mailto:info@vitek3dprint.cz">Napsat e-mail</a>
-<a class="btn secondary" href="#objednavka">Vytvořit poptávku</a>
-</div>
-</div>
-</div>
+    <div class="contactbox">
+      <h3 style="margin-top:0;font-size:28px">Vitek3DPrint</h3>
+      <p class="muted" style="margin-bottom:0">Zakázkový 3D tisk na míru</p>
+      <div class="contact-line">
+        <a href="mailto:info@vitek3dprint.cz">info@vitek3dprint.cz</a>
+        <div>Miroslav Vítek – Vitek3DPrint</div>
+        <div>IČO: 23155957</div>
+        <div>Kojčice 15, 394 09</div>
+      </div>
+      <div class="btns">
+        <a class="btn primary" href="mailto:info@vitek3dprint.cz">Napsat e-mail</a>
+        <a class="btn secondary" href="#objednavka">Vytvořit poptávku</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-© 2026 Vitek3DPrint • Miroslav Vítek • Zakázkový 3D tisk na míru
-</footer>
-
+<footer>© 2026 Vitek3DPrint • Miroslav Vítek • IČO: 23155957 • info@vitek3dprint.cz</footer>
 </body>
 </html>
